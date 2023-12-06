@@ -5,16 +5,16 @@
     <title>Document</title>
 </head>
 <body>
-<!--Stap 1: Ik wil een invoer veld krijgen waar ik in kan typen-->
-<input type="text" id="chat">
-<button onclick="haal_chat_op()">Chat!</button>
 <!--Stap 3: Ik wil dat de opgevangen tekst met JavaScript wordt getoond op het scherm-->
+<span id="tekst-weergave"></span>
+<!--Stap 1: Ik wil een invoer veld krijgen waar ik in kan typen-->
+<input type="text" id="chat" oninput="haal_chat_op()">
 <!--Stap 4: Bonus opdracht voor jullie.-->
 <script>
     <!--Stap 2: Ik wil dat ik met JavaScript de ingetypte tekst 'opvang'-->
     function haal_chat_op(){
         var chatvenster = document.getElementById("chat").value;
-        console.log(chatvenster);
+        document.getElementById("tekst-weergave").innerText = "Hier moet de chat komen. (Live update)";
     }
 
 
