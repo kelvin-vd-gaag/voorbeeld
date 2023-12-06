@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<!--Stap 1: Ik wil een invoer veld krijgen waar ik in kan typen-->
+<input type="text" id="chat">
+<button onclick="haal_chat_op()">Chat!</button>
+<!--Stap 3: Ik wil dat de opgevangen tekst met JavaScript wordt getoond op het scherm-->
+<!--Stap 4: Bonus opdracht voor jullie.-->
+<script>
+    <!--Stap 2: Ik wil dat ik met JavaScript de ingetypte tekst 'opvang'-->
+    function haal_chat_op(){
+        var chatvenster = document.getElementById("chat").value;
+        console.log(chatvenster);
+    }
+
+
+</script>
+</body>
+</html>
